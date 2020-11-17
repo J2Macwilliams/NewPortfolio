@@ -1,0 +1,100 @@
+
+#navBar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  background:var(--dark);
+  border-bottom: 2px solid red;
+  border-top: 1px solid var(--med);
+  overflow: hidden;
+}
+
+#navBar a{
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: 'Heebo', sans-serif; 
+  text-decoration: none;
+  color: var(--med);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#navBar a:hover{
+  color: var(--light)
+}
+nav a:active{
+  color: red;
+}
+
+#navBar .hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.navBackground {
+	display:block;
+	position:fixed;
+  top:0;
+  left:0;
+	height:100%;
+	width:100%;
+	background:rgb(1,1,69, 0.8);
+	overflow:auto;
+	z-index:3;
+}
+
+#smallNav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  height:80vh;
+}
+#smallNav a{
+  text-decoration: none;
+  font-size:2rem;
+  font-family:"Heebo", sans-serif;
+  color:var(--light);
+  text-transform: uppercase;
+}
+#smallNav a:hover{
+  color:red
+}
+.close{
+  text-align: right;
+  color: red;
+  font-size:3rem;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+}
+.close:hover{
+  color: white;
+}
+/* Media Queries */
+@media only screen and (max-width: 468px){
+  
+  #navBar{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #navBar a{
+    display: none
+  }
+  #navBar .hamburger{
+    display: block;
+    font-size: 2.5rem;
+  }
+  
+  
+} 
+
+
+
+
+
+

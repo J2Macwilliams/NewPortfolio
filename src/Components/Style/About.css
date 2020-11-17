@@ -1,0 +1,71 @@
+#about{
+  padding:0 5%;
+  margin-top: 5%;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+
+.greet{
+  font-size:6rem;
+  font-family: "Merriweather", serif;
+  
+}
+.storyBox{
+  padding: 0 5%;
+}
+.myPhoto{
+  margin: 0 2% 2%;
+  width: 35%;
+  float:left;
+  border-radius: 20px;
+  box-shadow: 1px 3px 2px;
+}
+
+.blurb{
+  width:100%;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 767px){
+  #about{
+    padding: 4% 4% 2%;
+  }
+  .myPhoto{
+    width: 50%;
+   
+  }
+
+}
+
+@media only screen and (max-width: 468px){
+  
+  /* .storyBox{
+    padding: 0;
+  } */
+  .greet{
+    margin-top: 15% ;
+    font-size:1.8rem;
+    font-weight:bold;
+    font-family: "Merriweather", serif;
+  }
+  .myPhoto{
+    width: 98%;
+    margin-bottom: 4%;
+   
+  }
+  .blurb{
+    font-size: 1.2rem;
+    /* text-align: center; */
+    padding: 0 2%;
+  }
+}
+

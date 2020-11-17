@@ -1,0 +1,55 @@
+#contact{
+  width:100;
+  padding: 1% 0;
+  background: var(--dark);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons{
+  color:var(--light);
+  cursor:pointer;
+  font-size: 2rem
+}
+
+.icons:hover{
+  color:red;
+}
+.closeModal{
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: var(--dark);
+  color:red;
+}
+
+.emailForm{
+  width: 100%;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+}
+
+.sendButton{
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+}
+.sendButton:hover{
+  color: var(--med)
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 468px){
+  .icons{
+    font-size: 1.5rem;
+  }
+  .emailForm{
+    width: 90%;
+  }
+  
+}

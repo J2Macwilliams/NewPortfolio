@@ -1,0 +1,47 @@
+.overlay {
+	position:fixed;
+  top:0;
+  left:0;
+	height:100%;
+	width:100%;
+	background:rgb(1,1,69, 0.8);
+	overflow:auto;
+	z-index:3;
+}
+
+
+.modalBox{
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height:auto;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+  padding: 1%;
+  z-index:4;
+}
+.modal {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column; 
+  
+  align-items: center;
+  z-index:5;
+  border-radius: 8px;
+  /* padding: 1%; */
+ border: 1px solid var(--light);
+  z-index:5;
+  
+}
+@media only screen and (max-width: 468px){
+  .modal{
+  width: 95%;
+}
+}

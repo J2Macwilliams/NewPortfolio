@@ -1,0 +1,228 @@
+#projects {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:80vh;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,144,255,1) 100%);
+}
+
+.title{
+  font-family: "Merriweather", serif;
+  font-size: 4rem;
+}
+
+.prjBox{
+  box-sizing: border-box;
+  width: 90%;
+  margin: 5% 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  
+  
+}
+
+.prjBox .card{
+  box-sizing: border-box;
+  overflow:hidden;
+  transition: 0.5s 
+}
+.prjBox .card:hover{
+  box-shadow: 0px 5px 5px var(--dark);
+  transform: scale(1.05);
+  z-index:1;
+}
+
+.prjBox .card .imgBox{
+  position: relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.prjBox .card .imgBox:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  
+  /* opacity:0; */
+  background: var(--dark);
+  transition: 0.5s;
+}
+.prjBox .card:hover .imgBox:before{
+  z-index: 1;
+}
+
+.prjBox .card .imgBox img{
+  position: relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.prjBox .card .content{
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  color:var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.prjBox .card:hover .content{
+  opacity:1;
+  z-index: 2;
+}
+.prjBox .card .content .cardSkills{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.prjBox .card .content .cardSkills img{
+  width: 12%;
+}
+.prjBox .card .content .cardSkills .prisma{
+  border-radius: 8px;
+}
+.prjBox .card .content .cardButton{
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+  margin-bottom: 1%;
+  font-size: 1.5rem;
+  padding:1%;
+  background: var(--light);
+  color:var(--dark);
+  border: 1px solid var(--med);
+  border-radius:8px;
+}
+
+.prjBox .card .content .cardButton:hover{
+  background: var(--med);
+}
+
+
+/* prj Modal */
+.topBox{
+  width:100%;
+  padding: 1%;
+}
+
+/* .switchBox{
+  display:flex;
+  justify-content:flex-end;
+  width: 100%;
+}
+
+.switchBox h2{
+  
+  color: var(--dark);
+  margin: 0;
+  
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.switchBox h2:hover{
+  color: red;
+} */
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottomBox{
+  width: 100%;
+  
+  border-radius: 0 0 8px 8px;
+  
+}
+.goals{
+  background: var(--dark);
+  color: var(--med);
+  margin: 0;
+  padding: 1% 2%;
+}
+.goals h3 {
+  margin: 1% 0;
+}
+.goals h3{
+  font-size: 1.5rem;
+}
+.prjLinks{
+  font-size: 2.5rem;
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--med);
+  border-radius: 0 0 8px 8px;
+}
+.prjLinks a{
+  text-decoration: none;
+  color: var(--dark);
+  margin:1%;
+}
+
+.prjLinks a:hover{
+  color: var(--light);
+}
+
+.exitModal{
+  color: var(--light);
+}
+.exitModal:hover{
+  color: red;
+}
+/* Media Queries */
+@media only screen and (max-width: 468px){
+  .prj-back > h1{
+    font-size:2.5rem ;
+  }
+}
+
+@media only screen and (max-width: 468px){
+  #projects{
+    padding-top: 15%;
+  }
+  
+  .prjBox{
+    margin: 8% 0 24%;
+  }
+  .prj-back > h1{
+    font-size:1.8rem ;
+  }
+  .prj-back > p {
+    font-size:1rem;
+  }
+  .prjButton{
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .closeBox h1{
+    font-size:1.5rem
+  }
+  .project h1{
+    font-size: 1.5rem
+  }
+  .prjLinks{
+    font-size: 2rem;
+  }
+}
+
+  
+
+
