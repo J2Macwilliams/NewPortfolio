@@ -5,9 +5,26 @@ import "./Style/Slider.css"
 import ToggleContent from './Modal/ToggleContent'
 import Modal from './Modal/Modal'
 import Slider from './Slider'
-import J2Slides from './Slides/J2Slides'
-import GOKSlides from './Slides/GokSlides'
-import D8PickerSlides from './Slides/D8PickerSlides'
+
+
+
+// GOK pics
+import SignUp from '../Assets/GOK/signUp.png'
+import Login from '../Assets/GOK/login.png'
+import AdminDash from '../Assets/GOK/adminDash.png'
+import Courses from '../Assets/GOK/courses.png'
+import StudentInfo from '../Assets/GOK/studentInfo.png'
+import UserDash from '../Assets/GOK/userDash.png'
+import PlacementTest from '../Assets/GOK/placementTest.png'
+// J2 pics
+import Register from '../Assets/J2/register.png'
+import Vacations from '../Assets/J2/Vacations.png'
+import VacationDays from '../Assets/J2/vacationDays.png'
+import ProfilePage from '../Assets/J2/profilePage.png'
+import EventPage from '../Assets/J2/eventPage.png'
+// D8Picker pics
+import Splash from '../Assets/D8Picker/splash.png'
+import Dashboard from '../Assets/D8Picker/dashboard.png'
 
 import GOK from '../Assets/GOK/gok.jpeg'
 import J2 from '../Assets/J2/Journey2.jpeg'
@@ -51,7 +68,10 @@ const Projects = () => {
               content={ toggleSwitch => (
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-                  <Slider arr={GOKSlides} />
+                  <Slider arr={[
+   SignUp, Login, UserDash, PlacementTest, AdminDash, Courses, StudentInfo
+
+]} />
                     <div className="projectTitle">
                       <h1>Garden of Knowledge</h1>
                     </div>
@@ -102,7 +122,7 @@ const Projects = () => {
                   <div className="topBox">
 
                     
-                    <Slider arr={J2Slides} />
+                    <Slider arr={[Register, Vacations, VacationDays, EventPage, ProfilePage]} />
                     <div className="projectTitle">
                       <h1>Journey2</h1>
                     </div>
@@ -148,7 +168,7 @@ const Projects = () => {
               content={ toggleSwitch => (
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-                  <Slider arr={D8PickerSlides} />
+                  <Slider arr={[Splash, Dashboard]} />
                     <div className="projectTitle">
                       <h1>D8Picker</h1>
                     </div>
