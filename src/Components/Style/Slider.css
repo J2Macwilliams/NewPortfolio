@@ -1,0 +1,43 @@
+.slider{
+  position:relative;
+  
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:0;
+  display: flex;
+  overflow: hidden;
+}
+.slide{
+  position: relative;
+  min-width: 100%;
+  height: 30vh;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 9px 9px 0 0;
+  border-bottom: 2px solid var(--dark);
+}
+
+
+
+#goLeft{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  
+  
+}
+#goRight{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  
+}
