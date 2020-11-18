@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import ToggleContent from './Modal/ToggleContent'
 import Modal from './Modal/Modal'
 import { Input, Textarea } from '@chakra-ui/core';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWindowClose } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import "./Style/Footer.css"
 
@@ -48,7 +48,9 @@ const Footer = () => {
 				content={ toggleSwitch => (
 
 					<Modal overlay={ toggleSwitch }>
-						<h2 onClick={ toggleSwitch }>X</h2>
+						<div className="exitBox">
+						<FaWindowClose className="closeModal" onClick={ toggleSwitch } />
+						</div>
 
 						<form className="emailForm" onSubmit={ sendEmail }>
 							<Input
