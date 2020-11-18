@@ -1,40 +1,41 @@
 import React from 'react'
 import "./Style/Projects.css"
-// import gsap from 'gsap'
-// import Modal from './Modal/Index'
-// import useModal from './Modal/useModal'
+import "./Style/Slider.css"
+
 import ToggleContent from './Modal/ToggleContent'
 import Modal from './Modal/Modal'
+import Slider from './Slider'
+import J2Slides from './Slides/J2Slides'
+import GOKSlides from './Slides/GokSlides'
+import D8PickerSlides from './Slides/D8PickerSlides'
 
-import GOK from '../Assets/gok.jpeg'
-import J2 from '../Assets/Journey2.jpeg'
-import D8Picker from '../Assets/d8picker.jpeg'
-import ReactImg from '../Assets/react.png'
-import ReduxImg from '../Assets/redux.png'
-import NodeJsImg from '../Assets/nodejs.png'
-import GraphQL from '../Assets/graphql.png'
-import Apollo from '../Assets/Apollo.png'
-import Prisma from '../Assets/prisma.png'
-import PostgreSQL from '../Assets/postgres.png'
-import MongoDB from '../Assets/mongoDB.png'
-import Oauth2 from '../Assets/oauth.png'
-import Jest from '../Assets/jest.png'
+import GOK from '../Assets/GOK/gok.jpeg'
+import J2 from '../Assets/J2/Journey2.jpeg'
+import D8Picker from '../Assets/D8Picker/d8picker.jpeg'
+import ReactImg from '../Assets/Skills/react.png'
+import ReduxImg from '../Assets/Skills/redux.png'
+import NodeJsImg from '../Assets/Skills/nodejs.png'
+import GraphQL from '../Assets/Skills/graphql.png'
+import Apollo from '../Assets/Skills/Apollo.png'
+import Prisma from '../Assets/Skills/prisma.png'
+import PostgreSQL from '../Assets/Skills/postgres.png'
+import MongoDB from '../Assets/Skills/mongoDB.png'
+import Oauth2 from '../Assets/Skills/oauth.png'
+import Jest from '../Assets/Skills/jest.png'
+
+
 import { SiNotion } from 'react-icons/si';
 import { FaGithub, FaLink, FaWindowClose } from 'react-icons/fa';
 
+
+
 const Projects = () => {
-
   return (
-
     <div id="projects">
-
-
       <div className="prjBox">
         <div className="card">
-
           <div className="imgBox">
             <img src={ GOK } alt="Garden of Knowledge" />
-
           </div>
           <div className="content">
             <h1 >Garden of Knowledge</h1>
@@ -48,16 +49,15 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-
-                    <div className="project">
+                  <Slider arr={GOKSlides} />
+                    <div className="projectTitle">
                       <h1>Garden of Knowledge</h1>
                     </div>
                   </div>
                   <div className="bottomBox">
-                  <div className="goals">
+                    <div className="goals">
                       <div>
                         <h3>Goal:</h3>
                         <p>Create a Learning Management System with onboarding for Admin, Staff, and students</p>
@@ -75,16 +75,13 @@ const Projects = () => {
                     </div>
                   </div>
                 </Modal>
-
               ) }
             />
           </div>
         </div>
         <div className="card">
-
           <div className="imgBox">
             <img src={ J2 } alt="Journey2" />
-
           </div>
           <div className="content">
             <h1 >Journey2</h1>
@@ -101,16 +98,17 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
 
-                    <div className="project">
+                    
+                    <Slider arr={J2Slides} />
+                    <div className="projectTitle">
                       <h1>Journey2</h1>
                     </div>
                   </div>
                   <div className="bottomBox">
-                  <div className="goals">
+                    <div className="goals">
                       <div>
                         <h3>Goal:</h3>
                         <p>Take the guess work out of financially planning a vacation. Organize vacations, excursions, and make vacation decisions based upon a budget.</p>
@@ -128,16 +126,13 @@ const Projects = () => {
                     </div>
                   </div>
                 </Modal>
-
               ) }
             />
           </div>
         </div>
         <div className="card">
-
           <div className="imgBox">
             <img src={ D8Picker } alt="D8Picker" />
-
           </div>
           <div className="content">
             <h1 >D8Picker</h1>
@@ -151,11 +146,10 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-
-                    <div className="project">
+                  <Slider arr={D8PickerSlides} />
+                    <div className="projectTitle">
                       <h1>D8Picker</h1>
                     </div>
                   </div>
@@ -178,7 +172,6 @@ const Projects = () => {
                     </div>
                   </div>
                 </Modal>
-
               ) }
             />
           </div>

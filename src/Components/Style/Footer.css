@@ -16,16 +16,21 @@
 .icons:hover{
   color:red;
 }
+.exitBox{
+  width:100%;
+  text-align: right;
+}
 .closeModal{
-  position: relative;
-  top: 0;
-  right: 0;
-  background-color: var(--dark);
-  color:red;
+  margin-right: 1%;
+  font-size:2rem;
+  color:var(--dark);
+}
+.closeModal:hover{
+  color: var(--med);
 }
 
 .emailForm{
-  width: 100%;
+  width: 90%;
   display: flex;
    flex-direction: column;
   align-items: center;

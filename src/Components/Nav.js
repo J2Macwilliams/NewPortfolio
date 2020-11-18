@@ -38,7 +38,7 @@ const Nav = () => {
       {showNav ? <div className="navBackground">
         <div className="close" onClick={ closeNav }>&times;</div>
         <nav id="smallNav" >
-          <a className="smallAnchors" href="/" >Home</a>
+          <a className="smallAnchors" href="#home" >Home</a>
           <a className="smallAnchors" href='#about'  >About</a>
           <a className="smallAnchors" href='#projects'  >Projects</a>
           <a className="smallAnchors" href='#contact'  >Contact</a>
