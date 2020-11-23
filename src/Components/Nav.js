@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./Style/Nav.css"
-// import { Box } from '@chakra-ui/core'
+import { Box } from '@chakra-ui/react'
 import { BiMenuAltRight } from 'react-icons/bi';
 
 const Nav = () => {
@@ -33,8 +33,7 @@ const Nav = () => {
         <a href='#about'  >About</a>
         <a href='#projects'  >Projects</a>
         <a href='#contact'  >Contact</a>
-        <BiMenuAltRight onClick={ openNav } className="hamburger"/>
-        {/* <Box  color="white" as={ BiMenuAltRight } /> */}
+        <Box  className="hamburger" color="white" as={ BiMenuAltRight } />
       </nav>
       {showNav ? <div className="navBackground">
         <div className="close" onClick={ closeNav }>&times;</div>
