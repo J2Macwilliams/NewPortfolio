@@ -84,9 +84,7 @@ const Footer = () => {
 							/>
 
 							<button
-								
 								className="sendButton"
-							
 								type='submit'
 								value='Send'
 								
@@ -97,35 +95,6 @@ const Footer = () => {
 					</Modal>
 				) }
 			/>
-
-			{/* <Drawer
-        isOpen={isOpen}
-        placement="bottom"
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton marginBottom="5%"/>
-          <DrawerHeader>Connect with Me</DrawerHeader>
-
-          <Box
-               
-								textAlign='center'
-								rounded='lg'
-								w='100%'
-							> */}
-
-
-
-			{/* </Box>
-
-         
-        </DrawerContent>
-      </Drawer> */}
-
-
-
 		</div>
 	);
 };
