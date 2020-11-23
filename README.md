@@ -6,9 +6,9 @@
 |Full Stack Developer |
 | [<img src="https://github.com/favicon.ico" width="30"> ](https://github.com/J2Macwilliams)   [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="30"> ](https://www.linkedin.com/in/jeremyjmcwilliams/) | 
 
-## Portfolio
+# Portfolio
 
-# Featuring
+## Featuring
 
 **Projects**
 Garden of Knowledge, Journey2, and D8Picker
