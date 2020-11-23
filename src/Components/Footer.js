@@ -2,7 +2,7 @@ import React from 'react'
 import emailjs from 'emailjs-com';
 import ToggleContent from './Modal/ToggleContent'
 import Modal from './Modal/Modal'
-import { Input, Textarea } from '@chakra-ui/core';
+import { Input, Textarea } from '@chakra-ui/react';
 import { FaGithub, FaLinkedinIn, FaTwitter, FaWindowClose } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import "./Style/Footer.css"
