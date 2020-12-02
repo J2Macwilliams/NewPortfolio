@@ -12,6 +12,8 @@
   font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
+  border-bottom: 2px solid var(--med);
+  color: var(--dark);
 }
 
 .title{
@@ -85,14 +87,25 @@
   opacity:1;
   z-index: 2;
 }
+.content h2{
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  margin: 1%;
+}
+.content p{
+  font-size: 2rem;
+  margin: 1%;
+}
 .prjBox .card .content .cardSkills{
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .prjBox .card .content .cardSkills img{
   width: 12%;
+  margin: 1% 6%;
 }
 .prjBox .card .content .cardSkills .prisma{
   border-radius: 8px;
@@ -129,6 +142,7 @@
   padding: 1% 0;
 }
 .projectTitle h1{
+  font-family: "Merriweather", serif;
   margin:0;
 }
 /* Slideshow container */
@@ -231,12 +245,26 @@
 }
 /* Media Queries */
 @media only screen and (max-width: 468px){
-  .prj-back > h1{
-    font-size:2.5rem ;
-  }
+  
 }
 
 @media only screen and (max-width: 468px){
+  .prj-back > h1{
+    font-size:2.5rem ;
+  }
+
+  .content h2{
+    font-size: 2rem;
+    
+    
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    
+    
+  }
+  
   #projects{
     padding-top: 15%;
   }

@@ -56,7 +56,7 @@ const Projects = () => {
             <img src={ GOK } alt="Garden of Knowledge" />
           </div>
           <div className="content">
-            <h1 >Garden of Knowledge</h1>
+            <h2 >Garden of Knowledge</h2>
             <p>School Learning Management System</p>
             <div className="cardSkills">
               <img src={ ReactImg } alt="React" />
@@ -105,7 +105,7 @@ const Projects = () => {
             <img src={ J2 } alt="Journey2" />
           </div>
           <div className="content">
-            <h1 >Journey2</h1>
+            <h2 >Journey2</h2>
             <p>Vacation Budget Planner</p>
             <div className="cardSkills">
               <img src={ ReactImg } alt="React" />
@@ -156,7 +156,7 @@ const Projects = () => {
             <img src={ D8Picker } alt="D8Picker" />
           </div>
           <div className="content">
-            <h1 >D8Picker</h1>
+            <h2 >D8Picker</h2>
             <p>Aperiodic recurrence scheduler</p>
             <div className="cardSkills">
               <img src={ ReactImg } alt="React" />
