@@ -11,9 +11,11 @@
 
 
 
-.greet{
-  font-size:6rem;
+#about h1{
+  font-size:3rem;
   font-family: "Merriweather", serif;
+  margin-bottom: 1%;
+  padding: 0;
   
 }
 .storyBox{
