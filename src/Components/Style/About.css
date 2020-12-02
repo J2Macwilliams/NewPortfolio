@@ -1,6 +1,6 @@
 #about{
   padding:0 5%;
-  margin-top: 5%;
+ 
   min-height:100vh;
   display:flex;
   flex-direction:column;
@@ -9,14 +9,21 @@
 
 }
 
+.about {
+  display:flex;
+  margin-bottom: 3%;
+}
 
 
-#about h1{
+.about h1{
   font-size:3rem;
   font-family: "Merriweather", serif;
   margin-bottom: 1%;
   padding: 0;
-  
+  color: var(--dark)
+}
+.about h1:nth-child(2){
+  color: var(--med)
 }
 .storyBox{
   padding: 0 5%;
@@ -50,9 +57,9 @@
 
 @media only screen and (max-width: 468px){
   
-  /* .storyBox{
-    padding: 0;
-  } */
+  #about h1 {
+    font-size: 2.5rem;
+  }
   .greet{
     margin-top: 15% ;
     font-size:1.8rem;

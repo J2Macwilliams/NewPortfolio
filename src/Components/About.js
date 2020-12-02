@@ -5,7 +5,9 @@ import "./Style/About.css"
 const About = () => {
   return (
     <div id="about">
-      <h1>What's his story?</h1>
+      <div className="about">
+      <h1>What's his story</h1>
+      <h1>?</h1></div>
       <div className="storyBox">
         <img className="myPhoto" src={ Jeremy } alt="Jeremy" />
         <p className="blurb"> I'm a Full-Stack Software Engineer with a passion for creativity, communication, and collaboration.<br /><br />
