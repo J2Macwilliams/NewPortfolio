@@ -5,14 +5,8 @@ import { BiMenuAltRight } from 'react-icons/bi';
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
-  const openNav = (e) => {
-    e.preventDefault();
-    setShowNav(!showNav)
-  }
-  const closeNav = (e) => {
-    e.preventDefault();
-    setShowNav(!showNav)
-  }
+  const toggleNav = () => setShowNav(!showNav)
+  
   useEffect(() => {
     if (showNav) {
      var smallNavigation = document.getElementsByClassName("smallAnchors")
@@ -20,11 +14,8 @@ const Nav = () => {
      for(let i = 0; i< sNLength; i++){
       smallNavigation[i].addEventListener("click", () => setShowNav(!showNav))
      }
-     console.log(smallNavigation)
     }
   }, [showNav])
-
-
 
   return (
     <>
@@ -33,22 +24,17 @@ const Nav = () => {
         <a href='#about'  >About</a>
         <a href='#projects'  >Projects</a>
         <a href='#contact'  >Contact</a>
-        <Box  className="hamburger" color="white" as={ BiMenuAltRight } />
+        <Box onClick={ toggleNav } className="hamburger" color="white" as={ BiMenuAltRight } />
       </nav>
       {showNav ? <div className="navBackground">
-        <div className="close" onClick={ closeNav }>&times;</div>
+        <div className="close" onClick={ toggleNav }>&times;</div>
         <nav id="smallNav" >
           <a className="smallAnchors" href="#home" >Home</a>
           <a className="smallAnchors" href='#about'  >About</a>
           <a className="smallAnchors" href='#projects'  >Projects</a>
           <a className="smallAnchors" href='#contact'  >Contact</a>
         </nav>
-
-
       </div> : '' }
-
-
-
     </>
   )
 }
