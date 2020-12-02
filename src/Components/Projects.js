@@ -49,6 +49,7 @@ import { FaGithub, FaLink, FaWindowClose } from 'react-icons/fa';
 const Projects = () => {
   return (
     <div id="projects">
+      <h1>Projects</h1>
       <div className="prjBox">
         <div className="card">
           <div className="imgBox">
