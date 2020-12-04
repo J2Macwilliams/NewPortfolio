@@ -41,7 +41,7 @@
   width: 100%;
   font-size: 2rem;
   margin: 1% 0;
-  border: 1px solid var(--med);
+  border: 2px solid var(--dark);
   color: var(--dark);
   border-radius: 8px;
 }

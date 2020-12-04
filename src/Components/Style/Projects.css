@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height:80vh;
+  padding: 0 1% 15%;
+  /* min-height:60vh; */
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,144,255,1) 100%);
 }
 
@@ -26,116 +27,169 @@
   width: 90%;
   margin: 5% 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 3%;
+  grid-row-gap: 3%;
 }
+
 
 .prjBox .card{
-  box-sizing: border-box;
-  overflow:hidden;
-  transition: 0.5s 
-}
-.prjBox .card:hover{
-  box-shadow: 0px 5px 5px var(--dark);
-  transform: scale(1.05);
-  z-index:1;
+  position: relative; 
+  background: var(--dark);
+  box-shadow: 0 5px 10px rgba(0,0,0,.8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.prjBox .card .imgBox{
-  position: relative;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-.prjBox .card .imgBox:before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: var(--dark);
+/* .prjBox .card:before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 20%;
+  border-top: 1px solid var(--med);
+  border-bottom: 1px solid var(--med);
+  box-sizing: border-box;
+  overflow:hidden;
   transition: 0.5s;
+  transform: scaleX(0); 
+  opacity: 0;
+  z-index: 0;
 }
-.prjBox .card:hover .imgBox:before{
+.prjBox .card:hover:before{
+  transform: scaleX(1);
+  opacity: 1;
   z-index: 1;
 }
 
-.prjBox .card .imgBox img{
-  position: relative;
-  top:0;
-  left:0;
+.prjBox .card:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 20%;
+  border-left: 1px solid var(--med);
+  border-right: 1px solid var(--med);
+  box-sizing: border-box;
+  overflow:hidden;
+  transition: 0.5s;
+  transform: scaleY(0); 
+  opacity: 0;
+  z-index: 0;
+}
+.prjBox .card:hover:after{
+  transform: scaleY(1);
+  opacity: 1;
+  z-index: 1;
+} */
+
+.imgBox img{
   width:100%;
-  height:100%;
   object-fit:contain;
+  transition: 0.5s;
+}
+
+.prjBox .card:hover .imgBox img{
+  opacity: 0.2;
+  transform: scale(1.2)
 }
 
 .prjBox .card .content{
   position: absolute;
-  top:0;
-  left: 0;
+  top:50%;
+  transform: translateY( -50%);
   opacity: 0;
   width:100%;
   height:100%;
   color:var(--light);
+  box-sizing: border-box;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+.content h2{
+  font-size: 1.8rem;
+  font-family: "Merriweather", serif;
+  margin: 3% 0 0;
+  transform: translateY(-50px);
+  transition: 0.5s;
+} 
+.content p{
+  font-size: 1.2rem;
+  margin: 1%;
+  transform: translateY(-40px);
+  transition: 0.5s;
 }
 .prjBox .card:hover .content{
   opacity:1;
-  z-index: 2;
+  transition-delay: 5ms;
 }
-.content h2{
-  font-size: 3rem;
-  font-family: "Merriweather", serif;
-  margin: 1%;
+.prjBox .card:hover .content h2,
+.prjBox .card:hover .content p{
+  transform: translateY(0px);
+  transition-delay: 1ms;
 }
-.content p{
-  font-size: 2rem;
-  margin: 1%;
-}
+
+
 .prjBox .card .content .cardSkills{
   width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  transition: 0.5s;
+  transform: translateY(50px)
 }
+
 .prjBox .card .content .cardSkills img{
   width: 12%;
   margin: 1% 6%;
 }
-.prjBox .card .content .cardSkills .prisma{
+.prisma{
   border-radius: 8px;
 }
-.prjBox .card .content .cardButton{
+.prjBox .card:hover .content .cardSkills{
+  transform: translateY(0px);
+  transition-delay: 6ms;
+}
+
+
+.prjBox .card .cardButton{
   position: absolute;
-  bottom:0;
-  left:50%;
-  transform: translateX(-50%);
-  margin-bottom: 1%;
+  bottom: 0;
+  transform: translateY( -75px);
+  backface-visibility : hidden;
+  transition: 0.5s;
+  margin: 4% 2%;
   font-size: 1.5rem;
   padding:1%;
   background: var(--light);
   color:var(--dark);
   border: 1px solid var(--med);
   border-radius:8px;
+  white-space: nowrap;
 }
 
-.prjBox .card .content .cardButton:hover{
-  background: var(--med);
+.prjBox .card:hover .cardButton{
+  transform: translateY(0px);
+  cursor: pointer;
 }
 
 
 /* prj Modal */
 .topBox{
   width:100%;
-  /* padding: 1%; */
 }
 
 .projectTitle{
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,45 +298,29 @@
   color: red;
 }
 /* Media Queries */
-@media only screen and (max-width: 468px){
-  
+@media only screen and (min-width: 400px){
+  #projects{
+    padding: 0 0 13%;
+  }
+  .content h2{
+    font-size: 2.1rem;
+  }
+  .content p {
+    font-size: 1.3rem;
+  }
 }
 
-@media only screen and (max-width: 468px){
-  .prj-back > h1{
-    font-size:2.5rem ;
-  }
-
-  .content h2{
-    font-size: 2rem;
-    
-    
-  }
-
-  .content p {
-    font-size: 1.2rem;
-    
-    
-  }
-  
+@media only screen and (min-width: 600px){
   #projects{
-    padding-top: 15%;
+    padding: 0;
   }
-  
   .prjBox{
-    margin: 8% 0 24%;
-  }
-  .prj-back > h1{
-    font-size:1.8rem ;
-  }
-  .prj-back > p {
-    font-size:1rem;
+    margin: 8% 0 20%;
   }
   .prjButton{
     width: 50%;
     font-size: 1rem;
   }
-
   .closeBox h1{
     font-size:1.5rem
   }
@@ -294,6 +332,30 @@
   }
 }
 
-  
+@media only screen and (min-width: 800px){
+  .prjBox{
+    margin: 6% 0 12%;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .prjBox{
+    margin: 4% 0;
+  }
+}
 
+@media only screen and (min-width: 1100px){
+  .prjBox{
+    margin: 10% 0 30%;
+  }
+}
 
+@media only screen and (min-width: 1300px){
+  .prjBox{
+    margin: 10% 0 20%;
+  }
+}
+@media only screen and (min-width: 1400px){
+  .prjBox{
+    margin: 8% 0 ;
+  }
+}

@@ -6,8 +6,6 @@ import ToggleContent from './Modal/ToggleContent'
 import Modal from './Modal/Modal'
 import Slider from './Slider'
 
-
-
 // GOK pics
 import SignUp from '../Assets/GOK/signUp.png'
 import Login from '../Assets/GOK/login.png'
@@ -40,11 +38,8 @@ import MongoDB from '../Assets/Skills/mongoDB.png'
 import Oauth2 from '../Assets/Skills/oauth.png'
 import Jest from '../Assets/Skills/jest.png'
 
-
 import { SiNotion } from 'react-icons/si';
 import { FaGithub, FaLink, FaWindowClose } from 'react-icons/fa';
-
-
 
 const Projects = () => {
   return (
@@ -57,7 +52,7 @@ const Projects = () => {
           </div>
           <div className="content">
             <h2 >Garden of Knowledge</h2>
-            <p>School Learning Management System</p>
+            <p>Learning Management System</p>
             <div className="cardSkills">
               <img src={ ReactImg } alt="React" />
               <img src={ ReduxImg } alt="Redux" />
@@ -69,10 +64,9 @@ const Projects = () => {
               content={ toggleSwitch => (
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-                  <Slider arr={[
-   SignUp, Login, UserDash, PlacementTest, AdminDash, Courses, StudentInfo
-
-]} />
+                    <Slider arr={ [
+                      SignUp, Login, UserDash, PlacementTest, AdminDash, Courses, StudentInfo
+                    ] } />
                     <div className="projectTitle">
                       <h1>Garden of Knowledge</h1>
                     </div>
@@ -122,8 +116,8 @@ const Projects = () => {
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
 
-                    
-                    <Slider arr={[Register, Vacations, VacationDays, EventPage, ProfilePage]} />
+
+                    <Slider arr={ [Register, Vacations, VacationDays, EventPage, ProfilePage] } />
                     <div className="projectTitle">
                       <h1>Journey2</h1>
                     </div>
@@ -169,7 +163,7 @@ const Projects = () => {
               content={ toggleSwitch => (
                 <Modal overlay={ toggleSwitch }>
                   <div className="topBox">
-                  <Slider arr={[Splash, Dashboard]} />
+                    <Slider arr={ [Splash, Dashboard] } />
                     <div className="projectTitle">
                       <h1>D8Picker</h1>
                     </div>
