@@ -96,10 +96,10 @@ const Projects = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={ J2 } alt="Journey2" />
+            <img src={ J2 } alt="Journey Co$t" />
           </div>
           <div className="content">
-            <h2 >Journey2</h2>
+            <h2 >Journey Co$t</h2>
             <p>Vacation Budget Planner</p>
             <div className="cardSkills">
               <img src={ ReactImg } alt="React" />
@@ -119,7 +119,7 @@ const Projects = () => {
 
                     <Slider arr={ [Register, Vacations, VacationDays, EventPage, ProfilePage] } />
                     <div className="projectTitle">
-                      <h1>Journey2</h1>
+                      <h1>Journey Co$t</h1>
                     </div>
                   </div>
                   <div className="bottomBox">
