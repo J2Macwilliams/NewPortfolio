@@ -136,7 +136,7 @@ const Projects = () => {
                     <div className="prjLinks">
                       <a href="https://www.notion.so/Vacation-Planner-e81c29178ad8410eb10f298e4f6d5860" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
                       <a href="https://github.com/VacationJourney" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
-                      <a href="https://journey2.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
+                      <a href="https://journey-cost.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
                       <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
                     </div>
                   </div>
