@@ -4,14 +4,16 @@ import "../Style/Modal.css"
 
 
 
-const Modal = ({ overlay, children }) => (
+const Modal = ({ toggleSwitch, children }) => (
   ReactDOM.createPortal(
     <>
-      <div className="overlay" onClick={ overlay } />
+      <div className="overlay" onClick={ toggleSwitch } />
       <div className="modalBox" >
-        <div className="modal">
-          { children }
-        </div>
+        
+          <div className="modal">
+            { children }
+          </div>
+       
       </div>
     </>
     ,

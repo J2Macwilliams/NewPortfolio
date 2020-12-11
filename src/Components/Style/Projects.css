@@ -5,7 +5,6 @@
   align-items: center;
   padding: 0 0 15%;
   width: 100%;
-  /* min-height:60vh; */
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,144,255,1) 100%);
 }
 
@@ -18,21 +17,14 @@
   color: var(--dark);
 }
 
-/* .title{
-  font-family: "Merriweather", serif;
-  font-size: 4rem;
-} */
-
 .prjBox{
   box-sizing: border-box;
-  width: 90%;
+  width: 70%;
   margin: 4% 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 3%;
   grid-row-gap: 3%;
-  /* border: 1px solid red; */
-  
 }
 
 .prjBox .card{
@@ -142,16 +134,20 @@
 
 
 /* prj Modal */
+
 .topBox{
   width:100%;
 }
 
 .projectTitle{
-  background: white;
+  background: var(--med);
+  color:var(--light);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1% 0;
+  display: flex;
+  flex-direction: column;
 }
 .projectTitle h1{
   font-family: "Merriweather", serif;
@@ -190,29 +186,6 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.slideText {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 .bottomBox{
   width: 100%;
@@ -231,14 +204,15 @@
   font-size: 1.5rem;
 }
 .prjLinks{
+  width: 100%;
   font-size: 2.5rem;
   padding-top: 1%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: var(--med);
   border-radius: 0 0 8px 8px;
 }
+
 .prjLinks a{
   text-decoration: none;
   color: var(--dark);
@@ -255,6 +229,7 @@
 .exitModal:hover{
   color: red;
 }
+
 /* Media Queries */
 @media only screen and (min-width: 400px){
   #projects{
@@ -275,6 +250,7 @@
     margin: 0;
   }
   .prjBox{
+    
     margin: 4% 0 8%;
   }
   .prjButton{
@@ -293,6 +269,8 @@
 }
 @media only screen and (min-width: 700px){
   .prjBox{
+    
+    width: 90%;
     margin: 4% 0 6%;
   }
 }
