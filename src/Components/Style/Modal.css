@@ -30,7 +30,7 @@
 
 .modal {
   width: 95%;
-  max-height: 90vh;
+  max-height: 80vh;
   background-color:var(--med);
   display: flex;
   flex-direction: column; 
