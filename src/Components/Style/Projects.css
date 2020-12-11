@@ -5,7 +5,6 @@
   align-items: center;
   padding: 0 0 15%;
   width: 100%;
-  /* min-height:60vh; */
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,144,255,1) 100%);
 }
 
@@ -18,21 +17,14 @@
   color: var(--dark);
 }
 
-/* .title{
-  font-family: "Merriweather", serif;
-  font-size: 4rem;
-} */
-
 .prjBox{
   box-sizing: border-box;
-  width: 90%;
+  width: 70%;
   margin: 4% 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 3%;
   grid-row-gap: 3%;
-  /* border: 1px solid red; */
-  
 }
 
 .prjBox .card{
@@ -145,7 +137,6 @@
 
 .topBox{
   width:100%;
-  
 }
 
 .projectTitle{
@@ -259,6 +250,7 @@
     margin: 0;
   }
   .prjBox{
+    
     margin: 4% 0 8%;
   }
   .prjButton{
@@ -277,6 +269,8 @@
 }
 @media only screen and (min-width: 700px){
   .prjBox{
+    
+    width: 90%;
     margin: 4% 0 6%;
   }
 }
