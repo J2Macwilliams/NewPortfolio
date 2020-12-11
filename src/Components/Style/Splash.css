@@ -27,17 +27,10 @@
 .top:hover{
   background: var(--med);
 }
-.bottom {
-  width:100%;
-  height: 50vh;
-  background: var(--dark);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center
-}
+
 
 #logo{
+  position: relative;
   animation: fill 1s ease forwards 3.5s;
 }
 
@@ -220,17 +213,28 @@ animation: line-anim 1s ease forwards 1.7s;
 
 
 /* Bottom Section */
+.bottom {
+  width:100%;
+  height: 50vh;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
 .intro-text{
+  
   white-space: nowrap;
   color: var(--med);
   width: 100%;
   transition: transform .2s ease-in-out;
   font-family: 'Heebo', sans-serif; 
-  font-size: 2.5rem;
+  font-size: 1rem;
   /* transform: scale(1.5); */
   display:flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .projects {
   color: var(--light);
@@ -251,15 +255,44 @@ animation: line-anim 1s ease forwards 1.7s;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 468px){
-  
-  #logo {
-    width: 100%;
-  }
-  
+/* @media only screen and (min-width: 400px){
   .intro-text{
     font-size: 1rem;
   }
-  
+} */
+@media only screen and (min-width: 500px){
+  #logo {
+    bottom: -40px;
+    width: 90%;
+  }
 }
- 
+/* @media only screen and (min-width: 600px){
+  #logo {
+    bottom: -40px;
+    width: 90%;
+  }
+} */
+@media only screen and (min-width: 700px){
+  
+  #logo {
+    bottom: -30px;
+    width: 80%;
+  }
+  .intro-text{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .intro-text{
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1200px){
+  #logo {
+    width: 70%;
+  }
+  .intro-text{
+    font-size: 2rem;
+  }
+}

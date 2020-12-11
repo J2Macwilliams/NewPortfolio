@@ -13,7 +13,7 @@ const Splash = () => {
       ease: "slow(0.7, 0.7, false)",
       duration: 5,
 
-      y: -50
+      y: -40
     })
     return t1
   }
@@ -35,22 +35,13 @@ const Splash = () => {
     })
     return t3
   }
-  // const prj = () => {
-  //   var t4 = gsap.timeline().from(".projects", {
-  //     duration: 1,
-  //     opacity: 0,
-  //     ease: "back.in",
-  //     scale: 1
-  //   })
-  //   return t4
-  // }
+ 
 
   useEffect(() => {
     var master = gsap.timeline()
     master.add(moveUp())
       .add(small(), "-=5")
       .add(title(), "-=2.5")
-      // .add(prj(), "-=1")
   }, [])
 
   return (
