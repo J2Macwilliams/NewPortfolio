@@ -62,15 +62,22 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-                <Modal overlay={ toggleSwitch }>
+                <Modal toggleSwitch={ toggleSwitch }>
                   <div className="topBox">
                     <Slider arr={ [
                       SignUp, Login, UserDash, PlacementTest, AdminDash, Courses, StudentInfo
                     ] } />
                     <div className="projectTitle">
                       <h1>Garden of Knowledge</h1>
+                      <div className="prjLinks">
+                        <a href="https://www.notion.so/The-Garden-of-Knowledge-c6fe89f6e98d493fa597de84a8bd6818" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
+                        <a href="https://github.com/Labs24GOK" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
+                        <a href="https://gardenofknowledge.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
+                        <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
+                      </div>
                     </div>
                   </div>
+
                   <div className="bottomBox">
                     <div className="goals">
                       <div>
@@ -82,12 +89,7 @@ const Projects = () => {
                         <p>Create a strong relationship with the stakeholder to deliver a product that truly met her needs. The work on this project incorporated the efforts of 2 remote teams, refactoring legacy code and fixing flawed logic. </p>
                       </div>
                     </div>
-                    <div className="prjLinks">
-                      <a href="https://www.notion.so/The-Garden-of-Knowledge-c6fe89f6e98d493fa597de84a8bd6818" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
-                      <a href="https://github.com/Labs24GOK" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
-                      <a href="https://gardenofknowledge.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
-                      <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
-                    </div>
+
                   </div>
                 </Modal>
               ) }
@@ -113,13 +115,19 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-                <Modal overlay={ toggleSwitch }>
+                <Modal toggleSwitch={ toggleSwitch }>
                   <div className="topBox">
 
 
                     <Slider arr={ [Register, Vacations, VacationDays, EventPage, ProfilePage] } />
                     <div className="projectTitle">
                       <h1>Journey Co$t</h1>
+                      <div className="prjLinks">
+                      <a href="https://www.notion.so/Vacation-Planner-e81c29178ad8410eb10f298e4f6d5860" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
+                      <a href="https://github.com/VacationJourney" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
+                      <a href="https://journey-cost.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
+                      <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
+                    </div>
                     </div>
                   </div>
                   <div className="bottomBox">
@@ -133,12 +141,7 @@ const Projects = () => {
                         <p>Many architectural decisions made based upon production and testing environments. Could have gone serverless, but would miss testing opportunity. Side project budgetary needs reflect on server speed. Building with passion creates a better product.</p>
                       </div>
                     </div>
-                    <div className="prjLinks">
-                      <a href="https://www.notion.so/Vacation-Planner-e81c29178ad8410eb10f298e4f6d5860" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
-                      <a href="https://github.com/VacationJourney" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
-                      <a href="https://journey-cost.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
-                      <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
-                    </div>
+                    
                   </div>
                 </Modal>
               ) }
@@ -161,11 +164,19 @@ const Projects = () => {
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }
               content={ toggleSwitch => (
-                <Modal overlay={ toggleSwitch }>
+                
+                <Modal toggleSwitch={ toggleSwitch }>
+                  
                   <div className="topBox">
                     <Slider arr={ [Splash, Dashboard] } />
                     <div className="projectTitle">
                       <h1>D8Picker</h1>
+                      <div className="prjLinks">
+                      <a href="https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
+                      <a href="https://github.com/Labs20-D8Picker" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
+                      <a href="https://labs20d8picker.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
+                      <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
+                    </div>
                     </div>
                   </div>
                   <div className="bottomBox">
@@ -179,14 +190,10 @@ const Projects = () => {
                         <p>DevOps configuration was tricky as we established the Oauth2 Authentication and Google Calendar connections. In the end we found a shortcut through Firebase to establish the API key.</p>
                       </div>
                     </div>
-                    <div className="prjLinks">
-                      <a href="https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1" rel="noreferrer noopener" target="_blank"><SiNotion /></a>
-                      <a href="https://github.com/Labs20-D8Picker" rel="noreferrer noopener" target="_blank"> <FaGithub /></a>
-                      <a href="https://labs20d8picker.netlify.app/" rel="noreferrer noopener" target="_blank"> <FaLink /></a>
-                      <FaWindowClose className="exitModal" onClick={ toggleSwitch } />
-                    </div>
+                    
                   </div>
                 </Modal>
+             
               ) }
             />
           </div>
