@@ -37,6 +37,7 @@ import PostgreSQL from '../Assets/Skills/postgres.png'
 import MongoDB from '../Assets/Skills/mongoDB.png'
 import Oauth2 from '../Assets/Skills/oauth.png'
 import Jest from '../Assets/Skills/jest.png'
+import auth0 from '../Assets/Skills/auth0.png'
 
 import { SiNotion } from 'react-icons/si';
 import { FaGithub, FaLink, FaWindowClose } from 'react-icons/fa';
@@ -111,6 +112,7 @@ const Projects = () => {
               <img src={ NodeJsImg } alt="Node" />
               <img src={ PostgreSQL } alt="PostgreSQL" />
               <img src={ Jest } alt="Jest" />
+              <img src={ auth0 } alt="Auth0" className="auth0"/>
             </div>
             <ToggleContent
               toggle={ toggleSwitch => <button className="cardButton" onClick={ toggleSwitch }>Learn More</button> }

@@ -109,10 +109,14 @@
 .prisma{
   border-radius: 8px;
 }
+.auth0{
+  width: 30%;
+}
 .prjBox .card:hover .content .cardSkills{
   transform: translateY(0px);
   transition-delay: 6ms;
 }
+
 
 
 .prjBox .card .cardButton{
